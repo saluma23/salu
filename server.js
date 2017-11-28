@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 app.use(express.static(__dirname));
 
 app.get('/',function(request, response)
-{response.render("index");
+{response.render("index.html");
 });
 
 var port= process.env.PORT || 5000;
